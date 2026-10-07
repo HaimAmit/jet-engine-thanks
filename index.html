@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Jet Engine Airlines ✈ Thank You, Crew</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="crt"></div>
+
+  <nav class="topnav" hidden>
+    <a href="#log">FLIGHT LOG</a>
+    <a href="#crew">CREW</a>
+    <a href="#credits">CREDITS</a>
+    <button id="music-toggle" class="music" aria-pressed="false" title="Toggle music">♪ OFF</button>
+  </nav>
+
+  <section id="start" class="screen start">
+    <div class="stars"></div>
+    <div class="start-inner">
+      <p class="blink small">NOW BOARDING</p>
+      <h1 class="logo">JET ENGINE<br><span>AIRLINES</span></h1>
+      <div id="start-jet" class="pixel-jet" aria-hidden="true"></div>
+      <p class="tagline">A THANK YOU TO THE CREW<br>WHO BUILT IT</p>
+      <button id="press-start" class="btn big">▶ PRESS START</button>
+      <button id="skip-game" class="btn ghost">SKIP TO THE THANK-YOUS ↓</button>
+      <p class="hint">↑ ↓ / W S / TOUCH TO FLY · COLLECT THE CREW</p>
+    </div>
+  </section>
+
+  <section id="game" class="screen game" hidden>
+    <canvas id="game-canvas" width="960" height="540"></canvas>
+    <div id="toast" class="toast" hidden></div>
+    <button id="game-skip" class="btn ghost corner">SKIP ▶▶</button>
+  </section>
+
+  <main id="main" hidden>
+    <section id="log" class="section">
+      <h2 class="section-title">✈ FLIGHT LOG <span id="flight-no"></span></h2>
+      <p class="section-sub">DEC 2025 → OCT 2026 · ONE LONG, BEAUTIFUL FLIGHT</p>
+      <ol id="timeline" class="timeline"></ol>
+    </section>
+
+    <section id="crew" class="section">
+      <h2 class="section-title">🎫 THE CREW</h2>
+      <blockquote class="announcement">
+        <div class="announcement-head">📢 A MESSAGE FROM THE CAPTAIN</div>
+        <p id="captain-message"></p>
+        <div id="captain-sign" class="announcement-sign"></div>
+      </blockquote>
+      <p class="section-sub">TAP A BOARDING PASS TO FLIP IT</p>
+      <div id="passes" class="passes"></div>
+    </section>
+
+    <section id="credits" class="section credits">
+      <h2 class="section-title">🎬 CREDITS</h2>
+      <div class="crawl-wrap">
+        <div id="crawl" class="crawl"></div>
+      </div>
+      <figure id="gource" class="gource" hidden>
+        <video src="assets/gource.mp4" controls playsinline preload="metadata"></video>
+        <figcaption>THE CODEBASE, GROWING COMMIT BY COMMIT</figcaption>
+      </figure>
+      <p class="final">THANK YOU FOR FLYING<br><span>JET ENGINE AIRLINES</span></p>
+      <button id="replay" class="btn">↺ PLAY AGAIN</button>
+    </section>
+  </main>
+
+  <script src="data/content.js"></script>
+  <script src="js/avatar.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

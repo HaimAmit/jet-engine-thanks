@@ -95,27 +95,9 @@ window.CONTENT = {
       note: "Thank you all for letting me fly this thing with you."
     },
     {
-      id: "itay",
-      name: "Itay Golan",
-      seat: "1A",
-      cabin: "ENGINEERING",
-      title: "Negation Navigator",
-      group: "Engineering",
-      photo: "assets/avatars/itay.jpg",
-      stats: [
-        ["Commits", "9"],
-        ["Lines added", "1,153"],
-        ["Built", "Rules sandbox"],
-        ["Peak hour", "12:00"]
-      ],
-      superlative: "Taught the engine when to say NO",
-      gameLine: "Itay boarded with the negation map!",
-      note: "Itay, hierarchy-based negation and the sandbox were the tools we leaned on every single day of validation. Thank you."
-    },
-    {
       id: "matan",
       name: "Matan Nachmias Grynbaum",
-      seat: "1B",
+      seat: "1A",
       cabin: "ENGINEERING",
       title: "Shadow Ops Commander",
       group: "Engineering",
@@ -129,6 +111,24 @@ window.CONTENT = {
       superlative: "Investigated more diff rows than anyone thought humanly possible",
       gameLine: "Matan boarded straight from the LOLA room!",
       note: "Matan, you built the shadow that made this rollout safe, and then chased every weird diff to the end. Thank you."
+    },
+    {
+      id: "itay",
+      name: "Itay Golan",
+      seat: "1B",
+      cabin: "ENGINEERING",
+      title: "Negation Navigator",
+      group: "Engineering",
+      photo: "assets/avatars/itay.jpg",
+      stats: [
+        ["Commits", "9"],
+        ["Lines added", "1,153"],
+        ["Built", "Rules sandbox"],
+        ["Peak hour", "12:00"]
+      ],
+      superlative: "Taught the engine when to say NO",
+      gameLine: "Itay boarded with the negation map!",
+      note: "Itay, hierarchy-based negation and the sandbox were the tools we leaned on every single day of validation. Thank you."
     },
     {
       id: "raz",
